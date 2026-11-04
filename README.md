@@ -14,7 +14,30 @@
 
 目前只声明已检查的 **DSH 0.2.1-rc.5**。宿主更新后需要重新验证。主题使用宿主令牌、客户端插槽和部分宿主 CSS 模块类名，宿主 DOM 或类名变化可能影响效果。
 
-本目录目前为发布准备版本，内部包名仍为 `@local/delta-force-ui`，`private: true` 用于防止误发布 npm。已经通过本地目录安装的用户可继续使用原来的加载方式。源码仓库：[ssf13546/dsh-delta-theme](https://github.com/ssf13546/dsh-delta-theme)。固定提交安装与全新安装测试尚待完成，请勿将源码公开视为已通过市场验收。
+### 安装试用版
+
+1. 打开 DSH 左侧 **插件**，点击 **添加插件**。
+2. 在“包名或地址”中粘贴下面的完整地址，按界面提示检查并确认安装：
+
+```text
+https://github.com/ssf13546/dsh-delta-theme.git#a07276f331e65d86f6ee9cde6107bb9510184f66
+```
+
+3. 安装后确认主题已启用，若页面未更新，刷新 DSH 页面。
+
+这条地址固定到 1.1.0 试用版源码。地址格式已按官方安装器核对，全新 profile 的实际安装尚未验证；遇到问题请在 [Issues](https://github.com/ssf13546/dsh-delta-theme/issues) 附上 DSH 版本和错误信息，截图请遮住私人内容。
+
+也可以把下面这段话发给 DSH 助手：
+
+```text
+请帮我安装这个 DSH 主题插件：
+https://github.com/ssf13546/dsh-delta-theme.git#a07276f331e65d86f6ee9cde6107bb9510184f66
+请先检查宿主版本与插件来源，再按正常安装流程让我确认。
+```
+
+如需停用，在插件页禁用“三角洲风格主题”；未显示中文名称时可按内部包名 `@local/delta-force-ui` 查找。内部包名保留以兼容现有安装，`private: true` 仅防止误发布 npm，不影响从 Git 安装。建议同一时间只启用一个界面主题。
+
+源码仓库：[ssf13546/dsh-delta-theme](https://github.com/ssf13546/dsh-delta-theme)。
 
 社区市场是第三方索引，上传 GitHub 不等于已经收录。其维护方会核实来源、bundle 和宿主版本；支持核验 Git 来源并解析为完整提交，不要求必须先发布 npm。规则见 [社区索引说明](https://github.com/bruc3van/awesome-dsh-plugin/blob/main/scripts/host-market/README.md)。
 
