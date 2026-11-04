@@ -1,0 +1,3 @@
+- insert:
+    - id: delta-force-ui
+      name: '@local/delta-force-ui'

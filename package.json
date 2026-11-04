@@ -1,0 +1,56 @@
+{
+  "name": "@local/delta-force-ui",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "三角洲风格主题：非官方 DSH 深色主题，支持本地壁纸、虚化与遮罩，不附带游戏官方素材。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "RELEASE-CHECKLIST.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "author": "ssf13546",
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme",
+    "三角洲风格主题"
+  ],
+  "engines": {
+    "dsh": "0.2.1-rc.5"
+  },
+  "scripts": {
+    "test": "node --check client.js && node tests/readability.mjs && node tests/wallpaper.mjs",
+    "pack:check": "npm pack --dry-run --ignore-scripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssf13546/dsh-delta-theme.git"
+  },
+  "homepage": "https://github.com/ssf13546/dsh-delta-theme#readme",
+  "bugs": {
+    "url": "https://github.com/ssf13546/dsh-delta-theme/issues"
+  }
+}
