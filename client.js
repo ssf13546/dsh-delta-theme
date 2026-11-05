@@ -217,6 +217,23 @@ window.__ModuleLoader__.load({
       :root:has(.dfu-frame) :where(button:disabled,button[aria-disabled="true"],[role="button"][aria-disabled="true"]) :where(span,svg) { color:inherit !important; }
       /* A white icon on the host's coral error badge has low contrast. */
       :root:has(.dfu-frame) .EEnIVa_removeFailed { color:#291619 !important; }
+      /* Deliverables and plans use static light fills independently of theme tokens. */
+      :root:has(.dfu-frame) .K5rwea_root {
+        --deliverable-fill:#1c2428; --deliverable-hover:#26343b;
+      }
+      :root:has(.dfu-frame) .lLdGaq_card {
+        --plan-card-fill:#1c2428; --plan-card-hover:#26343b;
+      }
+      :root:has(.dfu-frame) :is(.K5rwea_file,.lLdGaq_card) {
+        color:#e8eeef; border-color:#526068;
+      }
+      :root:has(.dfu-frame) :is(.K5rwea_fileIcon,.lLdGaq_cardIcon) {
+        background:#26343b; border-color:#526068;
+      }
+      :root:has(.dfu-frame) :is(.K5rwea_description,.lLdGaq_cardDescription) {
+        color:#b9c9ce; font-size:12px; line-height:18px;
+      }
+      :root:has(.dfu-frame) .K5rwea_description[data-error=true] { color:#ffaaa6; }
       @media(prefers-reduced-motion:reduce) { :root:has(.dfu-frame) :where(button,a,form) { transition:none !important; } }
       .dfu-frame { position:fixed; inset:0; pointer-events:none; z-index:2; }
       .dfu-frame__top { position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,#00e5a0 0 72px,#00e5a026 72px,transparent 65%); }

@@ -1,6 +1,6 @@
 {
   "name": "@local/delta-force-ui",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "type": "module",
   "description": "三角洲风格主题：非官方 DSH 深色主题，支持本地壁纸、虚化与遮罩，不附带游戏官方素材。",

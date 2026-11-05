@@ -40,4 +40,12 @@ const syntax=[...source.matchAll(/--shiki-token-[\w-]+:(#[0-9a-f]{6})/g)];
 assert.equal(syntax.length,9);
 for(const [,fg] of syntax) assert.ok(ratio(fg,'#10171b') >= 4.5, `Syntax ${fg}`);
 assert.ok(ratio('#291619','#ff7976') >= 4.5);
+// Static host card fills bypass theme tokens; check their CSS override colors too.
+for (const variable of ['deliverable-fill','deliverable-hover','plan-card-fill','plan-card-hover']) {
+  const bg = source.match(new RegExp('--' + variable + ':(#[0-9a-f]{6})'))?.[1];
+  assert.ok(bg, `Missing host card override: ${variable}`);
+  for (const fg of ['#e8eeef','#b9c9ce','#ffaaa6']) {
+    assert.ok(ratio(fg,bg) >= 4.5, `${variable} ${fg}: insufficient contrast`);
+  }
+}
 console.log(`PASS: ${pairs.length * 2} token pairs across both appearances; minimum ${min.toFixed(2)}:1. Nine syntax colors and failed-file remove icon pass 4.5:1.`);
