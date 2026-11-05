@@ -20,18 +20,18 @@
 2. 在“包名或地址”中粘贴下面的完整地址，按界面提示检查并确认安装：
 
 ```text
-https://github.com/ssf13546/dsh-delta-theme.git#a07276f331e65d86f6ee9cde6107bb9510184f66
+https://github.com/ssf13546/dsh-delta-theme.git#e0a3b032ea8e7490bec066256bfeca5bc3f08493
 ```
 
 3. 安装后确认主题已启用，若页面未更新，刷新 DSH 页面。
 
-这条地址固定到 1.1.0 试用版源码。地址格式已按官方安装器核对，全新 profile 的实际安装尚未验证；遇到问题请在 [Issues](https://github.com/ssf13546/dsh-delta-theme/issues) 附上 DSH 版本和错误信息，截图请遮住私人内容。
+这条地址固定到 1.1.1 试用版源码。地址格式已按官方安装器核对，全新 profile 的实际安装尚未验证；遇到问题请在 [Issues](https://github.com/ssf13546/dsh-delta-theme/issues) 附上 DSH 版本和错误信息，截图请遮住私人内容。
 
 也可以把下面这段话发给 DSH 助手：
 
 ```text
 请帮我安装这个 DSH 主题插件：
-https://github.com/ssf13546/dsh-delta-theme.git#a07276f331e65d86f6ee9cde6107bb9510184f66
+https://github.com/ssf13546/dsh-delta-theme.git#e0a3b032ea8e7490bec066256bfeca5bc3f08493
 请先检查宿主版本与插件来源，再按正常安装流程让我确认。
 ```
 
@@ -65,4 +65,5 @@ npm run pack:check
 ## 授权
 
 本项目以 [MIT 许可证](LICENSE) 发布，版权归 ssf13546 所有。使用、修改和分发时需保留版权声明与许可证。用户自行选择的壁纸不属于本项目授权范围。主题名称仅描述设计灵感，不代表官方授权、合作或认可。
+
 
