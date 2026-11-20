@@ -20,22 +20,20 @@
 2. 在“包名或地址”中粘贴下面的完整地址，按界面提示检查并确认安装：
 
 ```text
-https://github.com/ssf13546/dsh-delta-theme.git#e0a3b032ea8e7490bec066256bfeca5bc3f08493
+https://github.com/ssf13546/dsh-delta-theme.git#e8c2cedacfd53242727bad96b93d03ce3b15b9d0
 ```
 
 3. 安装后确认主题已启用，若页面未更新，刷新 DSH 页面。
 
-这条地址固定到 1.1.1 试用版源码。地址格式已按官方安装器核对，全新 profile 的实际安装尚未验证；遇到问题请在 [Issues](https://github.com/ssf13546/dsh-delta-theme/issues) 附上 DSH 版本和错误信息，截图请遮住私人内容。
+这条地址固定到 1.1.2 试用版源码。全新 profile 的实际安装尚未验证。遇到问题请在 [Issues](https://github.com/ssf13546/dsh-delta-theme/issues) 附上 DSH 版本和错误信息。
 
-也可以把下面这段话发给 DSH 助手：
+如果你用 DSH CLI 管理 `web` profile，在终端执行：
 
-```text
-请帮我安装这个 DSH 主题插件：
-https://github.com/ssf13546/dsh-delta-theme.git#e0a3b032ea8e7490bec066256bfeca5bc3f08493
-请先检查宿主版本与插件来源，再按正常安装流程让我确认。
+```sh
+dsh plugin --profile web add github:ssf13546/dsh-delta-theme#e8c2cedacfd53242727bad96b93d03ce3b15b9d0
 ```
 
-如需停用，在插件页禁用“三角洲风格主题”；未显示中文名称时可按内部包名 `@local/delta-force-ui` 查找。内部包名保留以兼容现有安装，`private: true` 仅防止误发布 npm，不影响从 Git 安装。建议同一时间只启用一个界面主题。
+如需停用，在插件页禁用“三角洲风格主题”。也可以按内部包名 `@local/delta-force-ui` 查找。建议同一时间只启用一个界面主题。
 
 源码仓库：[ssf13546/dsh-delta-theme](https://github.com/ssf13546/dsh-delta-theme)。
 

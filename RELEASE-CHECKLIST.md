@@ -8,7 +8,7 @@
 - [x] 已创建仓库并填写 repository、homepage、bugs 的真实地址。
 - [ ] 协调 package.json、client.js、cordis.patch.yml 的包名；保留壁纸存储键。
 - [ ] 添加 dsh-plugin topic，使用固定完整提交提供安装来源。
-- [ ] 若发布 npm，另行确定可用包名并移除 private。
+- [ ] 若发布 npm，另行确定可用包名。
 
 ## 实机验收（DSH 0.2.1-rc.5）
 
