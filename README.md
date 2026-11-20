@@ -25,7 +25,7 @@ https://github.com/ssf13546/dsh-delta-theme.git#e8c2cedacfd53242727bad96b93d03ce
 
 3. 安装后确认主题已启用，若页面未更新，刷新 DSH 页面。
 
-这条地址固定到 1.1.2 试用版源码。全新 profile 的实际安装尚未验证。遇到问题请在 [Issues](https://github.com/ssf13546/dsh-delta-theme/issues) 附上 DSH 版本和错误信息。
+这条地址固定到 1.1.2 试用版源码。已在 DSH 0.2.1-rc.5 的全新 `web` profile 中用下方命令验证安装，并确认 DSH 能在配置中识别主题。全新安装后的界面效果仍待验收。遇到问题请在 [Issues](https://github.com/ssf13546/dsh-delta-theme/issues) 附上 DSH 版本和错误信息。
 
 如果你用 DSH CLI 管理 `web` profile，在终端执行：
 
@@ -37,7 +37,7 @@ dsh plugin --profile web add github:ssf13546/dsh-delta-theme#e8c2cedacfd53242727
 
 源码仓库：[ssf13546/dsh-delta-theme](https://github.com/ssf13546/dsh-delta-theme)。
 
-社区市场是第三方索引，上传 GitHub 不等于已经收录。其维护方会核实来源、bundle 和宿主版本；支持核验 Git 来源并解析为完整提交，不要求必须先发布 npm。规则见 [社区索引说明](https://github.com/bruc3van/awesome-dsh-plugin/blob/main/scripts/host-market/README.md)。
+社区市场由第三方维护，维护者会核实安装来源、bundle 和宿主版本。Git 安装来源需固定到完整提交。规则见 [社区索引说明](https://github.com/bruc3van/awesome-dsh-plugin-pro/blob/main/scripts/host-market/README.md)。
 
 ## 壁纸与数据
 
